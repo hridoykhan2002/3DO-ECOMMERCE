@@ -1,0 +1,425 @@
+/****************** starup ****************/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out .3s;
+}
+:root{
+    --paratext: 'IBM Plex Sans Arabic', sans-serif;
+    --headingText: 'Roboto', sans-serif;
+    --subColor: #343434;
+    --primaryColor: #bc1c1c;
+}
+/***************** basic *****************/
+body{
+    scroll-behavior: smooth;
+    height: 500vh;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body li{
+    list-style: none;
+}
+body h1{
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 45px;
+    font-family: var(--headingText);
+}
+body h3{
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 25px;
+    font-family: var(--headingText);
+}
+body a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--paratext);
+}
+body p{
+    letter-spacing: .5px;
+    font-family: var(--paratext);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    padding: 100px 100px;
+}
+.section-header{
+    margin-bottom: 50px;
+}
+.section-header p{
+    margin-top: 20px;
+}
+/* header */
+.promobar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+}
+.promobarL{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.promoEmail{
+    border-right: 1px solid  rgba(128, 128, 128, 0.37);
+    padding-right: 20px !important;
+}
+.promobarL a, .promobarL i{
+    font-size: 14px;
+}
+.promobarR{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 14px;
+}
+.promoIcons i{
+    margin-right: 10px;
+}
+.promolan img{
+    width: 20px !important;
+}
+.promolan{
+    display: flex;
+    align-items: baseline;
+}
+.promolan a{
+    border-left: 1px solid rgba(128, 128, 128, 0.37);
+    border-right: 1px solid  rgba(128, 128, 128, 0.37);
+    padding: 10px;
+}
+.promolan a{
+    font-size: 14px;
+}
+.promolan i{
+    margin-left: 5px;
+    font-size: 14px;
+}
+.promoLog i{
+    margin-right: 5px;
+}
+/* nav */
+.navUp{
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    width: 100px;
+}
+.navMid{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.navMid .navCtaa{
+    padding: 10px 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.37);
+    border-left: 1px solid rgba(128, 128, 128, 0.37);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+}
+.navMid .navSea{
+    padding: 10px 150px 10px 30px;
+    border-top: 1px solid rgba(128, 128, 128, 0.37);
+    border-left: 1px solid rgba(128, 128, 128, 0.37);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+    color: grey;
+}
+.navBu{
+    color: #fff;
+    background-color: var(--primaryColor);
+    padding: 10px 20px;
+}
+.navEnd{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navEnd a{
+    position: relative;
+}
+.navEnd a i{
+    font-size: 25px;
+}
+.navEnd a span{
+    position: absolute;
+    font-size: 12px;
+    top: 0;
+    right: 0;
+    margin-top: -5px;
+    margin-right: -5px;
+    background-color: var(--primaryColor);
+    color: #fff;
+    padding: 5px;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.price{
+    font-weight: bold;
+}
+.navLinks{
+    background-color: var(--subColor);
+    font-family: var(--paratext);
+    padding: 10px 20px 10px 50px;
+}
+.navLinks a{
+    padding: 10px 20px;
+    color: #fff;
+}
+.homeLinks{
+    background-color: var(--primaryColor);
+}
+.homeLinks i{
+    font-size: 16px !important;
+}
+.navLinks a i{
+    font-size: 10px;
+}
+/* hero */
+.hero{
+    padding: 100px;
+    background: linear-gradient(to left, rgba(128, 128, 128, 0.24) ,white);
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+.hero h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.hero h1{
+    font-size: 80px;
+    color: var(--primaryColor);
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.hero h1::before{
+    content: "";
+    height: 100%;
+    width: 10px;
+    background-color: var(--primaryColor);
+    position: absolute;
+    left: 0;
+}
+.hero h4{
+    font-size: 18px;
+    margin: 20px 0;
+    font-family: var(--paratext);
+}
+.hero a{
+    display: inline-block;
+    padding: 10px 40px;
+    color: #fff;
+    background-color: var(--primaryColor);
+}
+.headHero{
+    font-weight: bold;
+    text-align: end;
+    font-size: 20px !important;
+    font-family: var(--paratext);
+    margin-top: -70px;
+    color: var(--subColor);
+}
+/* catagories */
+.catagori{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    gap: 1.5rem;
+}
+/* product */
+.productHeader{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.productHeader h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.productHeader p{
+    color: var(--subColor);
+}
+.productData{
+    display: grid;
+    grid-template-columns: 27% 27% 27%;
+    justify-content: center;
+    gap: 2rem;
+}
+.productContent{
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    box-shadow: 10px 10px 30px rgba(128, 128, 128, 0.158), -10px -10px 30px rgba(128, 128, 128, 0.103);
+}
+.productContent div{
+    padding: 20px;
+}
+.productContent img{
+    padding: 20px;
+    height: 250px !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+}
+.productContent h3{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.productContent p{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: var(--primaryColor);
+}
+.productContent a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    background-color: var(--subColor);
+    padding: 10px 20px;
+    color: #fff;
+}
+.productContent span{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 14px;
+    font-family: var(--paratext);
+    color: rgb(82, 82, 82);
+}
+/* new */
+.new{
+    background-color: #eeeeee;
+}
+.newHeader{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.newHeader h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.newHeader p{
+    color: var(--subColor);
+}
+.newData{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.newContent1{
+    background-color: #fff;
+    padding: 40px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+}
+.newData h1{
+    font-size: 50px;
+    color: var(--primaryColor);
+    margin-bottom: 30px;
+}
+.newData h3{
+    font-family: var(--paratext);
+    margin-bottom: 20px;
+}
+.newData p{
+    color: grey;
+}
+.newData a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--subColor);
+    color: #fff;
+    margin-top: 30px;
+}
+.newContent{
+    position: relative;
+    height: 455px;
+}
+.newContent i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: rgb(131, 131, 131);
+    font-size: 70px;
+    margin-right: -80px;
+}
+.new span{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.new article{
+    width: 10px;
+    height: 10px;
+    background-color: var(--subColor);
+    display: inline-block;
+    text-align: center;
+}
+.activeRow{
+    width: 10px;
+    height: 10px;
+    background-color: #fff !important;
+    border: 3px solid var(--subColor) !important;
+    display: inline-block;
+    text-align: center;
+}
+/* features */
+.features{
+    padding: 50px;
+    background-color: var(--subColor);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.feaContent{
+    text-align: center;
+}
+.feaContent i{
+    margin: 0 auto;
+    font-size: 30px;
+    color: var(--primaryColor);
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.feaContent h3{
+    font-size: 20px;
+    font-family: var(--paratext);
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.feaContent p{
+    letter-spacing: 1px;
+    font-size: 15px;
+}
